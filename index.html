@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        width: 100dvw;
+        height: 100dvh;
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      h1 {
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        color: bisque;
+        text-shadow: 0 0 5px hsla(60, 100%, 50%, 0.5);
+        font-size: 3.5rem;
+        transition: text-shadow 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          text-shadow: 0 0 5px hsla(17, 100%, 50%, 0.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Strona testowa</h1>
+    <script>
+      const headerEl = document.querySelector("h1");
+
+      const showMsg = () => (headerEl.innerHTML = "Działa");
+
+      headerEl.addEventListener("click", showMsg);
+    </script>
+  </body>
+</html>
