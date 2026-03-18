@@ -2,21 +2,27 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <meta name="apple-mobile-web-app-title" content="galik.biz" />
     <link rel="manifest" href="/site.webmanifest" />
-
-    <!-- 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>galik.biz</title>
-    <script type="module" crossorigin src="/assets/index-0FY-s5u9.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CgFBToVW.css">
+    <title>DTP & Frontend Freelancer | WordPress Developer</title>
+
+    <meta
+      name="description"
+      content="Freelancer DTP i Front-end Developer. Skład materiałów marketingowych, landing page, WordPress. Współpraca z agencjami reklamowymi."
+    />
+    <meta property="og:title" content="DTP i Frontend Freelancer" />
+    <meta
+      property="og:description"
+      content="Freelancer dla agencji reklamowych"
+    />
+    <meta property="og:type" content="website" />
+    <script type="module" crossorigin src="/assets/index-JNvOS_Z0.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-A06Ue4U6.css">
   </head>
   <body>
     <header>
@@ -50,18 +56,18 @@
                   offset="100%"
                   style="stop-color: hsl(0, 0%, 45%); stop-opacity: 1"
                 />
+              </linearGradient>
               <linearGradient
                 id="tri-gradient"
                 x1="0%"
                 y1="0%"
                 x2="0%"
                 y2="100%"
-            
               >
-              <stop
-                offset="0%"
-                style="stop-color: hsl(35, 100%, 50%); stop-opacity: 1"
-              />
+                <stop
+                  offset="0%"
+                  style="stop-color: hsl(35, 100%, 50%); stop-opacity: 1"
+                />
                 <stop
                   offset="50%"
                   style="stop-color: hsl(0, 0%, 95%); stop-opacity: 1"
@@ -80,7 +86,7 @@
               >
                 <stop
                   offset="0%"
-                  style="stop-color:hsl(35, 100%, 50%); stop-opacity: 1"
+                  style="stop-color: hsl(35, 100%, 50%); stop-opacity: 1"
                 />
                 <stop
                   offset="100%"
@@ -417,18 +423,76 @@
     <footer>
       <h2><span>Kontakt</span></h2>
       <div id="contact-form">
-        <form action="" method="post">
-          <input type="text" name="name" id="name" placeholder="Imię" />
-          <input type="email" name="" id="" placeholder="Email" /><textarea
-            name=""
-            id=""
+        <form novalidate>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Imię"
+            autocomplete="on"
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="Telefon"
+            autocomplete="on"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            autocomplete="on"
+          />
+          <input
+            type="text"
+            class="honeypot"
+            id="honeypot-web"
+            name="website"
+            tabindex="-1"
+            autocomplete="new-password"
+          />
+          <input
+            type="tel"
+            class="honeypot"
+            id="honeypot-fax"
+            name="fax"
+            tabindex="-1"
+            autocomplete="new-password"
+          />
+          <textarea
+            name="message"
+            id="message"
             placeholder="Wiadomość"
           ></textarea>
+          <span class="validation-msg" id="validation-msg-form"
+            >Wypełnij formularz</span
+          >
+          <span class="validation-msg" id="validation-msg-phone"
+            >Nieprawidłowy numer telefonu</span
+          >
+          <span class="validation-msg" id="validation-msg-email"
+            >Nieprawidłowy adres e-mail</span
+          >
           <button type="submit" id="submit-btn">Wyślij</button>
         </form>
         <div id="contacts">
-          <p>Email: wojciech.galik@gmail.com</p>
-          <p>+48 796 144 888</p>
+          <p>
+            Email:
+            <a href="mailto:wojciech.galik@gmail.com"
+              >wojciech.galik@gmail.com</a
+            >
+          </p>
+          <p>Tel.: <a href="tel:+48796144888">796 144 888</a></p>
+          <p>
+            <a aria-label="Chat on WhatsApp" href="https://wa.me/48796144888"
+              ><img
+                alt="Chat on WhatsApp"
+                src="/assets/WhatsAppButtonGreenSmall-DMI3br3m.svg"
+              />
+            </a>
+          </p>
         </div>
       </div>
     </footer>
