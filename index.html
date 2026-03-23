@@ -9,32 +9,61 @@
     <meta name="apple-mobile-web-app-title" content="galik.biz" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DTP & Frontend Freelancer | WordPress Developer</title>
-
+    <title>Frontend Developer & DTP Freelancer | WordPress, Landing Page</title>
+    <link rel="canonical" href="https://galik.biz/" />
     <meta
       name="description"
-      content="Freelancer DTP i Front-end Developer. Skład materiałów marketingowych, landing page, WordPress. Współpraca z agencjami reklamowymi."
+      content="Frontend Developer i DTP Freelancer z 12-letnim doświadczeniem. Tworzę landing page, WordPress i materiały do druku. Współpraca dla agencji reklamowych – Kraków i zdalnie."
     />
-    <meta property="og:title" content="DTP i Frontend Freelancer" />
+    <meta property="og:title" content="Frontend Developer & DTP Freelancer" />
     <meta
       property="og:description"
       content="Freelancer dla agencji reklamowych"
     />
     <meta property="og:type" content="website" />
-    <script type="module" crossorigin src="/assets/index-Bt-ed83A.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-C6-a8e2V.css">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["LocalBusiness", "ProfessionalService"],
+        "name": "Frontend Developer & DTP Freelancer - Wojciech Galik",
+        "url": "https://galik.biz",
+        "telephone": "+48796144888",
+        "email": "wojciech.galik@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Kraków",
+          "addressCountry": "PL"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Polska"
+        },
+        "description": "Usługi Frontend Development i DTP dla agencji reklamowych. WordPress, landing page, skład publikacji, przygotowanie do druku.",
+        "serviceType": [
+          "Frontend Development",
+          "WordPress Development",
+          "DTP",
+          "Skład publikacji",
+          "Landing Page"
+        ]
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CxvNIFTW.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CXnEnsKb.css">
   </head>
   <body>
     <header>
-      <nav id="nav-left" class="main-menu">
+      <nav id="nav-left" class="main-menu" aria-label="Główna nawigacja lewa">
         <ul>
           <li><a href="#offer">Oferta</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
         </ul>
       </nav>
       <div id="logo">
-        <a href="#">
+        <a href="#" aria-label="Strona główna - galik.biz">
           <svg
+            aria-hidden="true"
+            focusable="false"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 124 54"
             fill="none"
@@ -145,14 +174,21 @@
           </svg>
         </a>
       </div>
-      <nav id="nav-right" class="main-menu">
+      <nav id="nav-right" class="main-menu" aria-label="Główna nawigacja prawa">
         <ul>
           <li><a href="#cooperation">Współpraca</a></li>
           <li><a href="#contact-form">Kontakt</a></li>
         </ul>
       </nav>
-      <button id="hamburger"><span></span><span></span><span></span></button>
-      <nav id="nav-mobile">
+      <button
+        id="hamburger"
+        aria-label="Menu mobilne"
+        aria-expanded="false"
+        aria-controls="nav-mobile"
+      >
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-mobile" aria-label="Nawigacja mobilna">
         <ul id="menu-mobile">
           <li><a href="#offer">Oferta</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
@@ -163,24 +199,30 @@
     </header>
     <main>
       <section id="hero">
-        <h1>DTP Specialist & Front-End Developer</h1>
-        <h2>Techniczne wsparcie produkcyjne dla agencji reklamowych</h2>
+        <h1>Freelancer DTP & Front-End Developer</h1>
+        <h2>Wsparcie produkcyjne dla agencji reklamowych</h2>
         <p>
-          12 lat doswiadczenia w DTP + wdrożenia HTML, CSS, JavaScript /
-          Wordpress
+          12 lat doświadczenia w DTP + wdrożenia landing page (HTML, CSS,
+          JavaScript) oraz WordPress (PHP)
         </p>
         <div id="hero-cta">
-          <button><a href="#offer">Zobacz ofertę</a></button
-          ><button><a href="#contact-form">Skontaktuj się</a></button>
+          <a href="#offer" class="hero-cta-btn">Poznaj ofertę</a>
+          <a href="#contact-form" class="hero-cta-btn">Skontaktuj się</a>
         </div>
       </section>
 
       <section id="offer">
         <h2><span>Dla kogo pracuję</span></h2>
+        <p class="offer-intro">
+          Współpracuję z zespołami, które potrzebują szybkiego i technicznego
+          wsparcia w DTP i web.
+        </p>
         <div id="offer-container">
           <div class="card offer-card">
             <div class="offer-card-icon">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="40 100 35 30"
                 fill="none"
@@ -229,6 +271,8 @@
           <div class="card offer-card">
             <div class="offer-card-icon">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="95 100 35 30"
                 fill="none"
@@ -258,11 +302,13 @@
               </svg>
             </div>
 
-            <p>Studia Graficzne</p>
+            <p>Studia Graficzne i Kreatywne</p>
           </div>
           <div class="card offer-card">
             <div class="offer-card-icon">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="40 155 35 30"
                 fill="none"
@@ -301,6 +347,8 @@
           <div class="card offer-card">
             <div class="offer-card-icon">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="210 155 30 30"
                 fill="none"
@@ -331,6 +379,8 @@
           <div class="card offer-card">
             <div class="offer-card-icon">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="20 10 35 30"
                 fill="none"
@@ -366,23 +416,27 @@
 
       <section id="services">
         <h2><span>Moje Usługi</span></h2>
+        <p class="services-note">
+          Wsparcie produkcyjne dla agencji reklamowych – DTP i front-end w
+          jednym miejscu.
+        </p>
         <div id="services-container">
           <div class="card">
             <h3 class="dtp">DTP</h3>
             <ul>
-              <li>Skład publikacji</li>
-              <li>Przygotowanie do druku</li>
-              <li>Adaptacja materiałów</li>
-              <li>Kontrola techniczna</li>
+              <li>Skład materiałów marketingowych i publikacji</li>
+              <li>Przygotowanie plików do druku (DTP)</li>
+              <li>Adaptacja materiałów reklamowych do różnych formatów</li>
+              <li>Kontrola techniczna i poprawki produkcyjne</li>
             </ul>
           </div>
           <div class="card">
             <h3>Front-End</h3>
             <ul>
-              <li>Kodowanie pixel-perfect z Figma / PSD</li>
-              <li>Landing Page</li>
-              <li>WordPress</li>
-              <li>Budowa komponentów w React / Vue</li>
+              <li>Wdrożenia stron z Figma / PSD (HTML, CSS, JavaScript)</li>
+              <li>Landing page – szybkie i responsywne realizacje</li>
+              <li>WordPress – wdrożenia i modyfikacje (PHP)</li>
+              <li>Budowa komponentów UI (React / Vue)</li>
             </ul>
           </div>
         </div>
@@ -390,33 +444,73 @@
       <section id="whyme">
         <h2><span>Dlaczego warto ze mną pracować?</span></h2>
         <ul>
-          <li>12 lat doświadczenia produkcyjnego</li>
-          <li>Znajomość druku i web developmentu</li>
-          <li>Precyzja i terminowość</li>
-          <li>Minimalizacja poprawek</li>
+          <li>
+            12 lat doświadczenia w produkcji DTP i projektach marketingowych
+          </li>
+          <li>Połączenie DTP i front-end (HTML, CSS, JavaScript, WordPress)</li>
+          <li>Precyzyjne wdrożenia i dbałość o detale (pixel-perfect)</li>
+          <li>Terminowość i minimalizacja poprawek</li>
         </ul>
       </section>
 
       <section id="portfolio">
         <h2><span>Portfolio</span></h2>
-        <div id="portfolio-btns">
-          <button id="portfolio-btn-dtp" class="portfolio-btn-active">
+        <div id="portfolio-btns" role="tablist" aria-label="Filtry portfolio">
+          <button
+            id="portfolio-btn-dtp"
+            class="portfolio-btn-active"
+            role="tab"
+            aria-selected="true"
+            aria-controls="portfolio-dtp"
+          >
             Projekty DTP</button
-          ><button id="portfolio-btn-web">Projekty Web</button>
+          ><button
+            id="portfolio-btn-web"
+            role="tab"
+            aria-selected="false"
+            aria-controls="portfolio-web"
+          >
+            Projekty Web
+          </button>
         </div>
         <div id="portfolio-gallery">
-          <div class="portfolio-gallery-card portfolio-project-dtp"></div>
-          <div class="portfolio-gallery-card portfolio-project-dtp"></div>
-          <div class="portfolio-gallery-card portfolio-project-dtp"></div>
-          <div class="portfolio-gallery-card portfolio-project-dtp"></div>
+          <div
+            class="portfolio-gallery-card portfolio-project-dtp"
+            role="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          ></div>
+          <div
+            class="portfolio-gallery-card portfolio-project-dtp"
+            role="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          ></div>
+          <div
+            class="portfolio-gallery-card portfolio-project-dtp"
+            role="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          ></div>
+          <div
+            class="portfolio-gallery-card portfolio-project-dtp"
+            role="button"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+          ></div>
         </div>
       </section>
       <section id="cooperation">
         <h2><span>Współpraca</span></h2>
+        <p class="cooperation-note">
+          Wspieram agencje reklamowe w realizacji projektów DTP i web – od
+          przygotowania do druku po wdrożenia stron.
+        </p>
         <ul>
           <li>Rozliczenie godzinowe lub projektowe</li>
-          <li>Stała współpraca na elastycznych warunkach</li>
-          <li>Praca zdalna</li>
+          <li>Stałe wsparcie produkcyjne dla agencji reklamowych</li>
+          <li>Elastyczna współpraca dopasowana do projektów</li>
+          <li>Praca zdalna i szybka komunikacja</li>
         </ul>
       </section>
     </main>
@@ -430,6 +524,7 @@
             id="name"
             placeholder="Imię"
             autocomplete="on"
+            aria-label="Imię"
           />
           <input
             type="tel"
@@ -437,6 +532,7 @@
             id="phone"
             placeholder="Telefon"
             autocomplete="on"
+            aria-label="Telefon"
           />
           <input
             type="email"
@@ -444,6 +540,7 @@
             id="email"
             placeholder="Email"
             autocomplete="on"
+            aria-label="Email"
           />
           <input
             type="text"
@@ -452,6 +549,7 @@
             name="website"
             tabindex="-1"
             autocomplete="new-password"
+            aria-hidden="true"
           />
           <input
             type="tel"
@@ -460,11 +558,13 @@
             name="fax"
             tabindex="-1"
             autocomplete="new-password"
+            aria-hidden="true"
           />
           <textarea
             name="message"
             id="message"
             placeholder="Wiadomość"
+            aria-label="Wiadomość"
           ></textarea>
           <label for="privacy-check"
             ><input
@@ -472,20 +572,41 @@
               name="privacy-check"
               id="privacy-check"
             />Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z
-            <a href="#contact-form" id="privacy-policy"
+            <a
+              href="#contact-form"
+              id="privacy-policy"
+              role="button"
+              aria-haspopup="dialog"
+              aria-expanded="false"
               >polityką prywatności</a
             ></label
           >
-          <span class="validation-msg" id="validation-msg-form"
+          <span
+            class="validation-msg"
+            id="validation-msg-form"
+            role="alert"
+            aria-live="polite"
             >Wypełnij formularz</span
           >
-          <span class="validation-msg" id="validation-msg-phone"
+          <span
+            class="validation-msg"
+            id="validation-msg-phone"
+            role="alert"
+            aria-live="polite"
             >Nieprawidłowy numer telefonu</span
           >
-          <span class="validation-msg" id="validation-msg-email"
+          <span
+            class="validation-msg"
+            id="validation-msg-email"
+            role="alert"
+            aria-live="polite"
             >Nieprawidłowy adres e-mail</span
           >
-          <span class="validation-msg" id="validation-msg-checkbox"
+          <span
+            class="validation-msg"
+            id="validation-msg-checkbox"
+            role="alert"
+            aria-live="polite"
             >Zaznaczyć zgodę na przetwarzanie danych osobowych</span
           >
           <button type="submit" id="submit-btn">Wyślij</button>
