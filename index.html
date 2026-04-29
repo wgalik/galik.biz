@@ -48,8 +48,8 @@
         ]
       }
     </script>
-    <script type="module" crossorigin src="/assets/index-DDPLyoRy.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DM0QQw0V.css">
+    <script type="module" crossorigin src="assets/index-B8fakBBU.js"></script>
+    <link rel="stylesheet" crossorigin href="assets/index-Ce_zySsW.css">
   </head>
   <body>
     <header>
@@ -179,7 +179,7 @@
         >
           <ul>
             <li><a href="#cooperation">Współpraca</a></li>
-            <li><a href="#contact-form">Kontakt</a></li>
+            <li><a href="#root-form">Kontakt</a></li>
           </ul>
         </nav>
         <button
@@ -195,7 +195,7 @@
             <li><a href="#offer">Oferta</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#cooperation">Współpraca</a></li>
-            <li><a href="#contact-form">Kontakt</a></li>
+            <li><a href="#root-form">Kontakt</a></li>
           </ul>
         </nav>
       </div>
@@ -203,18 +203,18 @@
         <picture>
           <source
             media="(max-width: 40rem)"
-            srcset="/assets/hero-mobile-480-WV8WLCUq.jpg 480w, /assets/hero-mobile-640-DllyaCv-.jpg 640w, /assets/hero-mobile-768-wFpUtlT_.jpg 768w"
+            srcset="assets/hero-mobile-480-WV8WLCUq.jpg 480w, assets/hero-mobile-640-DllyaCv-.jpg 640w, assets/hero-mobile-768-wFpUtlT_.jpg 768w"
             sizes="100vw"
           />
           <source
             media="(min-width: 40rem)"
-            srcset="/assets/hero-desktop-1024-Dx3_L2C9.jpg 1024w, /assets/hero-desktop-1280-DwpaENMy.jpg 1280w, /assets/hero-desktop-1536-Aj7Cc5P8.jpg 1536w, /assets/hero-desktop-1920-DRs4lRyW.jpg 1920w, /assets/hero-desktop-2560-C2E2_ZYx.jpg 2560w"
+            srcset="assets/hero-desktop-1024-Dx3_L2C9.jpg 1024w, assets/hero-desktop-1280-DwpaENMy.jpg 1280w, assets/hero-desktop-1536-Aj7Cc5P8.jpg 1536w, assets/hero-desktop-1920-DRs4lRyW.jpg 1920w, assets/hero-desktop-2560-C2E2_ZYx.jpg 2560w"
             sizes="100vw"
           />
 
           <img
-            src="/assets/hero-desktop-1280-DwpaENMy.jpg"
-            alt="Hero image"
+            src="assets/hero-desktop-1280-DwpaENMy.jpg"
+            alt="Hero banner"
             loading="lazy"
           />
         </picture>
@@ -569,50 +569,8 @@
 
       <section id="portfolio">
         <h2><span>Portfolio</span></h2>
-        <div id="portfolio-btns" role="tablist" aria-label="Filtry portfolio">
-          <button
-            id="portfolio-btn-dtp"
-            class="portfolio-btn-active"
-            role="tab"
-            aria-selected="true"
-            aria-controls="portfolio-dtp"
-          >
-            Projekty DTP</button
-          ><button
-            id="portfolio-btn-web"
-            role="tab"
-            aria-selected="false"
-            aria-controls="portfolio-web"
-          >
-            Projekty Web
-          </button>
-        </div>
-        <div id="portfolio-gallery" class="section-container">
-          <div
-            class="portfolio-gallery-card portfolio-project-dtp"
-            role="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-          ></div>
-          <div
-            class="portfolio-gallery-card portfolio-project-dtp"
-            role="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-          ></div>
-          <div
-            class="portfolio-gallery-card portfolio-project-dtp"
-            role="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-          ></div>
-          <div
-            class="portfolio-gallery-card portfolio-project-dtp"
-            role="button"
-            aria-haspopup="dialog"
-            aria-expanded="false"
-          ></div>
-        </div>
+
+        <div id="root-portfolio"></div>
       </section>
       <section id="cooperation">
         <h2><span>Współpraca</span></h2>
@@ -630,122 +588,8 @@
     </main>
     <footer>
       <h2><span>Kontakt</span></h2>
-      <div id="contact-form">
-        <form novalidate>
-          <input
-            type="text"
-            name="name"
-            id="name"
-            placeholder="Imię"
-            autocomplete="on"
-            aria-label="Imię"
-          />
-          <input
-            type="tel"
-            name="phone"
-            id="phone"
-            placeholder="Telefon"
-            autocomplete="on"
-            aria-label="Telefon"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-            autocomplete="on"
-            aria-label="Email"
-          />
-          <input
-            type="text"
-            class="honeypot"
-            id="honeypot-web"
-            name="website"
-            tabindex="-1"
-            autocomplete="new-password"
-            aria-hidden="true"
-          />
-          <input
-            type="tel"
-            class="honeypot"
-            id="honeypot-fax"
-            name="fax"
-            tabindex="-1"
-            autocomplete="new-password"
-            aria-hidden="true"
-          />
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Wiadomość"
-            aria-label="Wiadomość"
-          ></textarea>
-          <div id="privacy-container">
-            <input type="checkbox" name="privacy-check" id="privacy-check" />
-            <p id="privacy-label">
-              <label for="privacy-check"
-                >Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z
-              </label>
-              <button
-                id="privacy-policy"
-                type="button"
-                aria-haspopup="dialog"
-                aria-expanded="false"
-              >
-                polityką prywatności
-              </button>
-            </p>
-          </div>
-
-          <span
-            class="validation-msg"
-            id="validation-msg-form"
-            role="alert"
-            aria-live="polite"
-            >Wypełnij formularz</span
-          >
-          <span
-            class="validation-msg"
-            id="validation-msg-phone"
-            role="alert"
-            aria-live="polite"
-            >Nieprawidłowy numer telefonu</span
-          >
-          <span
-            class="validation-msg"
-            id="validation-msg-email"
-            role="alert"
-            aria-live="polite"
-            >Nieprawidłowy adres e-mail</span
-          >
-          <span
-            class="validation-msg"
-            id="validation-msg-checkbox"
-            role="alert"
-            aria-live="polite"
-            >Zaznaczyć zgodę na przetwarzanie danych osobowych</span
-          >
-          <button type="submit" id="submit-btn">Wyślij</button>
-        </form>
-        <div id="contacts">
-          <p>
-            Email:
-            <a href="mailto:wojciech.galik@gmail.com"
-              >wojciech.galik@gmail.com</a
-            >
-          </p>
-          <p>Tel.: <a href="tel:+48796144888">796 144 888</a></p>
-          <p>
-            <a aria-label="Chat on WhatsApp" href="https://wa.me/48796144888"
-              ><img
-                alt="Chat on WhatsApp"
-                src="/assets/WhatsAppButtonGreenSmall-DMI3br3m.svg"
-              />
-            </a>
-          </p>
-        </div>
-      </div>
+      <div id="root-form"></div>
     </footer>
-
+    <div id="modal-root"></div>
   </body>
 </html>
